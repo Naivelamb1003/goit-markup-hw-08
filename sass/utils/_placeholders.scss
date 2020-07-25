@@ -1,0 +1,143 @@
+%logo-styleTitle {
+  color: #000000;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 2;
+}
+
+%bar-styleTitle {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+
+%features-styleTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+%specialization-styleTitle {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+
+%team-styleTitle {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+
+%logo-footerStyleTitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 2;
+  color: $primary-fon-color;
+}
+
+%input-formFooterStyleTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+%portfolio-buttonStyleTitle {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03rem;
+}
+
+%portfolio-cardStyleTitle {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06rem;
+}
+
+%portfolio-captionStyleTitle {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03rem;
+}
+
+%portfolio-contentStyleTitle {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03rem;
+}
+
+%heading-modalStyleTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+%form-inpuStyleTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+}
+
+%form-labelStyleTitle {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+}
+
+%button {
+  min-width: 200px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  color: $primary-fon-color;
+  background-color: $accent-color;
+
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06rem;
+}
+
+%list {
+  display: flex;
+  justify-content: center;
+}

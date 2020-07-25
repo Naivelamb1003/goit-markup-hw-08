@@ -1,0 +1,98 @@
+/* logo */
+.logo {
+  @extend %logo-styleTitle;
+
+  &-text {
+    color: $accent-color;
+  }
+}
+
+/* Site header */
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 1230px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  & .item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  & .item:first-child {
+    margin-right: 85px;
+  }
+}
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 35px;
+}
+
+.link {
+  position: relative;
+  color: $link-text-color;
+  @include transitions;
+
+  &.curent::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.curent {
+  color: $accent-color;
+}
+
+.contact {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-icon {
+  margin-right: 10px;
+  fill: $address-text-color;
+}
+
+.us {
+  margin-left: 30px;
+  color: $address-text-color;
+
+  &:hover .nav-icon,
+  &:focus .nav-icon {
+    fill: $accent-color;
+  }
+
+  &:hover span,
+  &:focus span {
+    color: $accent-color;
+  }
+}
+
+.nav-icon {
+  @include transitions;
+}
+
+.us span {
+  @include transitions;
+}
