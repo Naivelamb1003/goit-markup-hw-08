@@ -1,7 +1,3 @@
 @mixin transitions($type: color) {
   transition: $type 250ms $timeFunction;
 }
-
-@mixin transitionsBg($type: background-color) {
-  transition: $type 250ms $timeFunction;
-}

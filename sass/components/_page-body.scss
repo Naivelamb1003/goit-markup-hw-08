@@ -166,6 +166,57 @@
   fill: currentColor;
 }
 
+// /* Regular customers */
+
+.cust .container {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.section .cust-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.cust .section-title {
+  margin-bottom: 30px;
+}
+
+.cust-list .item {
+  max-width: 100%;
+  height: 90px;
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
+  cursor: pointer;
+}
+
+.regular-img {
+  transition: fill 250ms $timeFunction;
+
+  margin: auto;
+  fill: currentColor;
+}
+
+.cust-list div {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms $timeFunction;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &:hover .regular-img,
+  &:focus .regular-img {
+    fill: $accent-color;
+  }
+}
+
 // /* Our team */
 // .team {
 //   background-color: $border-color;
