@@ -1,3 +1,70 @@
+.portfolio-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-top: 25px;
+}
+
+.portfolio-list .item {
+  margin: 15px;
+}
+
+.card-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content .title {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  @extend %portfolio-cardStyleTitle;
+  color: $title-text-color;
+}
+
+.card-content {
+  padding: 20px 24px;
+  border-left: 1px solid $card-border;
+  border-right: 1px solid $card-border;
+  border-bottom: 1px solid $card-border;
+  box-sizing: border-box;
+
+  background: $primary-fon-color;
+  & .caption {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    @extend %portfolio-captionStyleTitle;
+    color: $primary-text-color;
+  }
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms $timeFunction;
+
+  .portfolio-list .item:hover & {
+    transform: translateY(0);
+  }
+  & .text {
+    display: block;
+    padding: 77px 24px;
+    margin: auto;
+    @extend %portfolio-contentStyleTitle;
+    color: $primary-fon-color;
+  }
+}
+
 // .section-portfolio {
 //   width: 1230px;
 //   padding-left: 15px;
