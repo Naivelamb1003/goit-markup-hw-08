@@ -669,14 +669,38 @@ a {
   }
 }
 
-.logo-footer {
-  display: block;
-  padding-top: 60px;
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1119px) {
+  .logo-footer {
+    display: block;
+  }
 }
 
 .footer-info {
   padding-top: 60 px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    text-align: left;
+    margin-bottom: 0;
+    margin-right: 69px;
+  }
 }
 
 .footer-address {
@@ -696,6 +720,12 @@ a {
 .footer-link {
   text-align: center;
   padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-link {
+    margin-right: 94px;
+  }
 }
 
 .footer-link h3 {
@@ -726,15 +756,29 @@ a {
 }
 
 .footer-form {
-  text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1119px) {
+  .footer-form {
+    text-align: center;
+  }
 }
 
 .footer-text {
   color: #ffffff;
   margin: auto;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .sub {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+  }
 }
 
 .input-form {
@@ -749,6 +793,13 @@ a {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .input-form {
+    width: 358px;
+    margin: 0 12px 0 0;
+  }
+}
+
 .button-footer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -758,10 +809,21 @@ a {
           align-items: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
   height: 50px;
   padding: 0px 28px 0px 29px;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1119px) {
+  .button-footer {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-footer {
+    margin-top: 0px;
+  }
 }
 
 .button-footer:hover, .button-footer:focus {

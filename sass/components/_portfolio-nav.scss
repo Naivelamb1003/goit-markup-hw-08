@@ -1,12 +1,14 @@
 .list-nav {
   display: flex;
   align-items: center;
-  padding-top: 60px;
+  padding-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    padding-bottom: 30px;
   }
   @media screen and (max-width: 1200px) {
     min-width: 362px;
+    padding-bottom: 34px;
     flex-wrap: wrap;
   }
 }
