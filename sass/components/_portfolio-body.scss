@@ -2,11 +2,30 @@
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
+  margin: -15px;
   padding-top: 25px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
 }
 
 .portfolio-list .item {
   margin: 15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    width: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    width: calc((100% - 6 * 15px) / 3);
+  }
 }
 
 .card-img {
@@ -28,6 +47,15 @@
   border-right: 1px solid $card-border;
   border-bottom: 1px solid $card-border;
   box-sizing: border-box;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 
   background: $primary-fon-color;
   & .caption {
@@ -41,6 +69,15 @@
 .project-card {
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .content-overlay {

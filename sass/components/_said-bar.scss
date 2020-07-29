@@ -13,14 +13,6 @@
     ),
     url(../images/main/Header.jpg);
 
-  @media screen and (min-width: $mobile) {
-    max-width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-    max-width: $tablet;
-  }
-
   @media screen and (min-width: $desktop) {
     height: 600px;
     background-position: center;
@@ -28,6 +20,9 @@
   }
 
   & .hero {
+    text-align: center;
+
+    text-align: center;
     position: absolute;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -35,8 +30,12 @@
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
-    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      padding: 200px 15px;
+    }
   }
+
   & .title {
     display: block;
     margin-top: 0px;
@@ -45,6 +44,17 @@
     color: $primary-fon-color;
 
     @extend %bar-styleTitle;
+    @media screen and (min-width: $desktop) {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
   }
 }
 
