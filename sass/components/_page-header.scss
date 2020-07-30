@@ -1,10 +1,221 @@
 /* logo */
 .logo {
   @extend %logo-styleTitle;
-
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+  }
   &-text {
     color: $accent-color;
   }
+}
+
+.page-header {
+  border-bottom: 2px solid $border-botom;
+  position: relative;
+  & .header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    @media screen and (min-width: 768px) {
+      padding: 0;
+      align-items: baseline;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header {
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  padding: 20px;
+  text-align: center;
+
+  background-color: $primary-fon-color;
+
+  &.is-open {
+    display: block;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.navigation {
+  text-align: center;
+}
+.site-nav {
+  list-style-type: none;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
+
+  & .link {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #212121;
+    @media screen and (max-width: 767px) {
+      padding-bottom: 8px;
+    }
+    @media screen and (min-width: 768px) {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      font-size: 14px;
+      line-height: 1.14;
+    }
+  }
+}
+
+.site-nav .item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+}
+
+.site-nav .item:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+}
+
+.contacts {
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+
+.contact {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  @media screen and (min-width: 768px) {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    padding: 0;
+  }
+}
+
+.contact .us {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #757575;
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    justify-content: start;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-right: 30px;
+    text-align: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.contact li:first-child {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
+  }
+}
+.nav-icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Site header */
