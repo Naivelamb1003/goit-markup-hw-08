@@ -10,9 +10,12 @@
   }
 }
 
-.page-header {
-  border-bottom: 2px solid $border-botom;
+header {
+  border-bottom: 2px solid #ececec;
   position: relative;
+}
+
+.page-header {
   & .header-nav {
     display: flex;
     align-items: center;
@@ -128,6 +131,7 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     color: #212121;
+
     @media screen and (max-width: 767px) {
       padding-bottom: 8px;
     }
@@ -139,6 +143,33 @@
       line-height: 1.14;
     }
   }
+}
+
+.curent {
+  color: $accent-color;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.link:hover,
+.link:focus {
+  color: $accent-color;
 }
 
 .site-nav .item:not(:last-child) {
@@ -191,6 +222,7 @@
     justify-content: center;
   }
   @media screen and (min-width: 768px) {
+    margin-top: 10px;
     font-size: 12px;
     justify-content: start;
   }
@@ -208,11 +240,30 @@
   }
 }
 
+.us:hover .nav-icon,
+.us:focus .nav-icon {
+  fill: $accent-color;
+}
+
+.us:hover span,
+.us:focus span {
+  color: $accent-color;
+}
+
+.nav-icon {
+  @include transitions;
+}
+
+.us span {
+  @include transitions;
+}
+
 .contact li:first-child {
   @media screen and (max-width: 767px) {
     margin-bottom: 16px;
   }
 }
+
 .nav-icon {
   fill: currentColor;
   margin-right: 10px;
