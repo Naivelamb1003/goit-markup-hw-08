@@ -1445,7 +1445,7 @@ header {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1119px) {
+@media screen and (max-width: 1199px) {
   .button-footer {
     margin-top: 20px;
   }
